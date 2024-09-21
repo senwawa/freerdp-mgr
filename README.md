@@ -16,7 +16,7 @@ As soon as you press **Connect** you will just need to input the data and you wi
 The first time that you will open up the script a file called **config.conf** will be created.
 Inside there are two variables:
 
-**RDP_SIZE**: Size of the virtual monitor
+**RDP_SIZE**: Size of the virtual monitor\
 **DOMAIN**: You can leave this empty if you wish, it's for putting a domain so others dont see it and you use it by default
 
 
