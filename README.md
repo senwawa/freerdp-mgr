@@ -9,8 +9,8 @@ There are three options:
 
 ![image](https://github.com/user-attachments/assets/806f4fa1-9fd8-4262-9c04-67579613b4e0)
 
-**Connect**
-**Create Password Database File**
+**Connect**\
+**Create Password Database File**\
 **Exit**
 
 As soon as you press **Connect** you will just need to input the data and you will be straight in!
