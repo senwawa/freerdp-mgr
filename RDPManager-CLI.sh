@@ -29,6 +29,8 @@ EOF
 # Call the function
 check_and_create_config
 
+source $CONFIG_FILE
+
 # Function to create an empty password.conf file
 create_password_db() {
     clear
@@ -71,6 +73,9 @@ ask_and_save_password() {
 # Function to connect to the server
 connect_to_server() {
     clear
+    local USE_SAVED_DOMAIN
+
+    # If DOMAIN is not empty, ask if the user wants to use the saved domain
     if [ -n "$DOMAIN" ]; then
         echo -e -n "\033[33mWARNING\033[0m: Domain is already filled out in configuration. Do you wish to use the one in it? (y/n) "
         read USE_SAVED_DOMAIN
@@ -105,7 +110,7 @@ connect_to_server() {
     echo "Connecting to the server..."
 
     # Execute the xfreerdp command with the provided inputs
-    xfreerdp /v:$DOMAIN /u:$USERNAME /p:$PASSWORD /size:$RDP_SIZE /cert:tofu
+    xfreerdp /v:"$DOMAIN" /u:"$USERNAME" /p:"$PASSWORD" /size:"$RDP_SIZE" /cert:tofu
     echo ""
     echo "Press Enter to return to the main menu..."
     read
@@ -114,7 +119,7 @@ connect_to_server() {
 # Main Menu
 while true; do
     clear
-    echo -e "\033[34mR\033[31mD\033[34mP\033[31mM\033[34ma\033[31mn\033[34ma\033[31mg\033[34me\033[31mr\033[34m-\033[31mC\033[34mL\033[31mI\033[0m - \033[35mhttps://github.com/senwawa/freerdp-mgr\033[0m"
+    echo -e "\033[34mR\033[31mD\033[34mP\033[31mM\033[34ma\033[31mn\033[34mna\033[31mg\033[34me\033[31mr\033[34m-\033[31mC\033[34mL\033[31mI\033[0m - \033[35mhttps://github.com/senwawa/freerdp-mgr\033[0m"
     echo ""
     echo -e "1. \033[36mConnect\033[0m"
     echo -e "2. \033[36mCreate Password Database File\033[0m"
