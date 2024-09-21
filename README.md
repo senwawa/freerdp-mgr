@@ -1,7 +1,10 @@
 # freerdp-mgr
 I writed this mostly cause i was bored, but i will maintain it daily.
 
-# Usage
+## Requirements
+[**xfreerdp**](https://www.freerdp.com/)
+
+## Usage
 There are three options: 
 
 ![image](https://github.com/user-attachments/assets/806f4fa1-9fd8-4262-9c04-67579613b4e0)
