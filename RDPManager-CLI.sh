@@ -119,7 +119,7 @@ connect_to_server() {
 # Main Menu
 while true; do
     clear
-    echo -e "\033[34mR\033[31mD\033[34mP\033[31mM\033[34ma\033[31mn\033[34mna\033[31mg\033[34me\033[31mr\033[34m-\033[31mC\033[34mL\033[31mI\033[0m - \033[35mhttps://github.com/senwawa/freerdp-mgr\033[0m"
+    echo -e "\033[34mR\033[31mD\033[34mP\033[31mM\033[34ma\033[31mn\033[34ma\033[31mg\033[34me\033[31mr\033[34m-\033[31mC\033[34mL\033[31mI\033[0m - \033[35mhttps://github.com/senwawa/freerdp-mgr\033[0m"
     echo ""
     echo -e "1. \033[36mConnect\033[0m"
     echo -e "2. \033[36mCreate Password Database File\033[0m"
